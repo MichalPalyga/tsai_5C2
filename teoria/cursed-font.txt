@@ -1,0 +1,3 @@
+cursed font
+
+xampp -> explorer -> contrib -> mysql.php przydatne
