@@ -1,0 +1,13 @@
+Stwórz tablicę dziesięcioelementową (10 liczb całkowitych)
+
+Napisz funkcję, która zwróci sumę wszystkich elementów tablicy
+
+Napisz funkcję, która zwróci największy element tablicy
+
+Napisz funkcję, która zwróci najmniejszy element tablicy
+
+Napisz funkcję sprawdzającą, która liczba jest parzysta i wypisująca 
+ją, oraz jej wszystkie dzielniki
+
+napisz funkcję liczącą ile w tablicy występuje liczb dodatnich
+Wyniki wyświetl w konsoli
