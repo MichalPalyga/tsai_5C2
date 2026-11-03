@@ -25,7 +25,7 @@ document.querySelector("#form_stozek").addEventListener('submit', (event) => {
     let h = document.querySelector('#h').value;
     let l = document.querySelector('#l').value;
     if(rs > 0 && h > 0 && l > 0){
-    ob_s.textContent = "Objętość:" + Math.round(1 / 3 * 3.14 * rs ** 2 * h, 2)
+    ob_s.textContent = "Objętość:" + Math.round(1 / 3 * 3.14 * rs * rs * h, 2)
     pb_s.textContent = "Pole boczne:" + Math.round(3.14 * rs * l)}
     else{
         alert("Liczba nie może być ujemna")
@@ -36,7 +36,7 @@ document.querySelector("#form_kula").addEventListener('submit', (event) => {
     event.preventDefault()
     let rk = document.querySelector('#rk').value;
     if(rk > 0){
-    ob_k.textContent = "Objętość:" + Math.round(4 / 3 * 3.14 * rk ** 3, 2)
+    ob_k.textContent = "Objętość:" + Math.round(4 / 3 * 3.14 * rk *rk * rk, 2)
     pb_k.textContent = "Pole:" + Math.round(4 * 3.14 * rk ** 2, 2)}
     else{
         alert("Liczba nie może być ujemna")
