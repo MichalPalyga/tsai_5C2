@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit i button</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <input type="button" id="stozek" value="Stożek"><br>
+      
+            <span class="stozek">
+                <form id="form_stozek">
+                    <label for="r">Promień</label>
+                    <input type="number" id="r">
+                    <label for="h">Wysokość</label>
+                    <input type="number" id="h">
+                    <label for="l">Obwód</label>
+                    <input type="number" id="l">
+                    <input type="submit" value="Oblicz">    
+                    <p id="ob_s">Objętość: </p>
+                    <p id="pb_s">Pole boczne: </p>
+                </form>
+            </span>
+            <input type="button" id="kula" value="kula"> <br>
+            <span class="kula">
+                <form id="form_kula">
+                    <label for="rk">Promień</label>
+                    <input type="number" id="rk">
+                    <input type="submit" value="Oblicz">
+                    <p id="ob_k">Objętość: </p>
+                    <p id="pb_k">Pole: </p>
+                </form>
+            </span>
+            <input type="button" id="ostro" value="ostro">
+            <span class="ostro">
+                <form id="form_ostro">
+                    <label for="wys">Wysokość</label>
+                    <input type="number" id="wys">
+                    <label for="bok1">Długość boku pierwszego</label>
+                    <input type="number" id="bok1">
+                    <label for="bok2">Długość boku drugiego</label>
+                    <input type="number" id="bok2">
+                    <input type="submit" value="Oblicz">
+                    <p id="ob_o">Objętość: </p>
+                    <p id="prawi"></p>
+                </form>
+            </span>
+        
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>
