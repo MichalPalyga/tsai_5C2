@@ -29,7 +29,7 @@ let btn = document.querySelector('#search')
 let treeName = document.querySelector('#search-tree').value
 function script2(){
         if(trees.includes(treeName)){
-            
+            script1(image)
         }else{
             main.textContent = "Drzewa, o którym chcesz znaleźć informacje, nie ma w naszym Atlasie drzew."
         }
