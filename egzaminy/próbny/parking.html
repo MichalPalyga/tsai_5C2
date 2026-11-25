@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkowanie</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+
+<body>
+    <header>
+        <img src="znak.png" alt="znak - Parking" class="headt">
+        <h1 class="headt">Parkingi</h1>
+        <img src="znak.png" alt="znak - Parking" class="headt">
+        <hr>
+    </header>
+    <main>
+        <section id="left">
+            <h2>Cennik</h2>
+            <table>
+                <tr>
+                    <th>Strefa</th>
+                    <th>Godziny</th>
+                    <th>Pierwsza godzina</th>
+                    <th>Kolejne 15min*</th>
+                </tr>
+                <tr>
+                    <td>Podstrefa A</td>
+                    <td>8:00 - 20:00</td>
+                    <td>5,00 zł</td>
+                    <td>1,25 zł</td>
+                </tr>
+                <tr>
+                    <td>Podstrefa B</td>
+                    <td>8:00 - 20:00</td>
+                    <td>6,00 zł</td>
+                    <td>1,50 zł</td>
+                </tr>
+                <tr>
+                    <td>Podstrefa C</td>
+                    <td>8:00 - 20:00</td>
+                    <td>8,40 zł</td>
+                    <td>2,10 zł</td>
+                </tr>
+                <tr>
+                    <td colspan="4">* Po 1. godzinie parkowania, opłata naliczana jest proporcjonalnie za każde
+                        rozpoczęte 15 minut</td>
+                </tr>
+            </table>
+        </section>
+        <section id="right">
+            <h2>Wybór strefy</h2>
+            <form>
+                <select name="strefa" id="strefa">
+                    <option value="A">Podstrefa A</option>
+                    <option value="B">Podstrefa B</option>
+                    <option value="C">Podstrefa C</option>
+                </select>
+                <h2>Czas parkowania</h2>
+                <input type="number" name="godz" id="godz" value="1" min="1" max="12">:<input type="number" name="minut" id="minut" min="0" max="45" step="15"><br>  
+                 
+            </form>
+            <button id="generuj">Generuj bilet</button><br>
+                <p id="bilet"></p>
+            
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <p>Autor strony: <em>22</em></p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

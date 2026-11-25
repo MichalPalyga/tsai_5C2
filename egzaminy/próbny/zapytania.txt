@@ -1,0 +1,27 @@
+zap1 
+
+SELECT parkowanie.Nr_rejestracyjny,
+       COUNT(parkowanie.id_strefy)
+  FROM parkowanie
+GROUP BY parkowanie.Nr_rejestracyjny;
+
+zap2
+CREATE VIEW Dane_Parkowania AS
+SELECT parkowanie.Nr_rejestracyjny,
+       samochody.marka,
+       parkowanie.Data,
+       parkowanie.godzina_rozp,
+       parkowanie.czas
+  FROM parkowanie INNER JOIN samochody ON parkowanie.Nr_rejestracyjny = samochody.Nr_rejestracyjny
+
+zap3
+SELECT strefy.Nazwa,
+       COUNT(parkowanie.id_strefy)
+  FROM strefy INNER JOIN parkowanie ON strefy.Id_strefy = parkowanie.id_strefy
+GROUP BY strefy.Nazwa
+HAVING COUNT(parkowanie.id_strefy) < 14
+
+zap4
+UPDATE strefy
+   SET strefy.Cena = 8
+ WHERE strefy.Nazwa = "Podstrefa C";
