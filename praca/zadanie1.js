@@ -1,4 +1,4 @@
-let kwadrat = parseInt(prompt("Numer do kwadratu."))
+let kwadrat = parseInt(prompt("Podaj numer do kwadratu:"))
 alert(kwadrat_nazwana(kwadrat))
 
 function kwadrat_nazwana(liczba) {

@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(31, 31, 81);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+.enemy-hand{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 5px solid black;
+}
+.table{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.players-hand{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 5px solid black;
+}
+.card{
+    width: 5vw;
+    height: 19vh;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    border-radius: 5px;
+}
+
+.player{
+    background-color: red;
+}
+.player:hover{
+    background-color: rgb(250,86,86);
+    transform: scale(1.1);
+}
+.enemy{
+    background-color: blue;
+}
+.enemy:hover{
+    background-color: rgb(2, 2, 199);
+    transform: scale(1.1);
+}
+.player-side{
+    width: 45vw;
+    height: 100%;
+}
+.enemy-side{
+    width: 45vw;
+    height: 100%;
+}
+.player-side, 
+.enemy-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.picked{
+    transform: scale(3);
+}
+.picked:hover{
+    transform: scale(3);
+}

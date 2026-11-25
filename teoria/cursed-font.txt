@@ -1,3 +1,5 @@
 cursed font
 
 xampp -> explorer -> contrib -> mysql.php przydatne
+
+motyw midnight synth

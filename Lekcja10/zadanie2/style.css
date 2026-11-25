@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+}
+header{ 
+    background-color: blue;
+    height: 5vh;
+}
+main{
+    background-color: darkblue;
+    height: 95vh;
+}
+p{
+    display: inline-block;
+}

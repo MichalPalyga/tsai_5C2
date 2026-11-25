@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pola figur</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+
+<body>
+    <header>
+        <h2>Pola figur płaskich</h2>
+    </header>
+    <main>
+        <nav>
+            <h3>MENU</h3>
+            <ul>
+                <li><a href="index.html">Prostokąt i trójkąt</a></li>
+                <li><a href="kolo.html">Okrąg i koło</a></li>
+            </ul>
+        </nav>
+        <section>
+            <img src="/Lekcja10/pliki/1d.bmp" alt="Figura" id="figura"><br>
+            <img class="figury" src="/Lekcja10/pliki/1m.bmp" alt="Wybierz trójkąt" id="trojkat">
+            <img class="figury" src="/Lekcja10/pliki/2m.bmp" alt="Wybierz prostokąt" id="prostokat">
+        </section>
+        <aside>
+            <h3>Pole prostokąta / pole trójkąta</h3>
+            <form>
+            <label for="bok1_pod">Bok prostokąta / podstawa trójkąta:</label><br>
+            <input type="number" name="bok1_pod" id="bok1_pod"><br>
+            <label for="bok2_wys">Drugi bok prostokąta / wysokość trójkąta:</label><br>
+            <input type="number" name="bok2_wys" id="bok2_wys"><br>
+            <button type="button">Oblicz</button>
+        </form>
+            <p id="wynik"></p>
+        </aside>
+    </main>
+    <footer>
+        <p> Autor: 22</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
